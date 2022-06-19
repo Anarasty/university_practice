@@ -20,7 +20,7 @@ export const RatingForm = (movieId) => {
                 <option value="" default></option>
                 {nums.map((num) => {
                 return (
-                    <option value={num} key={num}>{num+'★'}</option>
+                    <option value={num} key={num}>{num}</option>
                 )
             })}
         </select>

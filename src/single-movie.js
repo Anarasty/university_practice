@@ -131,7 +131,7 @@ export const SingleMovie = () => {
                         <p>{synopsis}</p>
                     </div>
                     <div className="user-options">
-                        <h5>Personal rating: {userRating > 0 ? userRating:"0"}★</h5>
+                        <h5>Personal rating: {userRating > 0 ? userRating:"0"}</h5>
                         <RatingForm id={movieId} title={title} release_date={release_date} rating={rating} />
                         <div className="watchlist-button-div">
                             <h5>{present ? "In Favorites ☑":'Not in Favorites ☒'}</h5>
@@ -154,7 +154,7 @@ export const SingleMovie = () => {
                 {recMovies.map((movie) => {
                     return (
                         <div className="single-movie-rec-div" key={movie.movieId}>
-                            <article className="movie-rec shadow">
+                            <article className="movie-rec">
                                 <Link to={`/movie/${movie.movieId}`}><img src={`${IMAGE_BASE_URL}w92${movie.poster}`} alt={movie.title} /></Link>
                                 <p><Link to={`/movie/${movie.movieId}`}>{movie.title}</Link></p>
                             </article>

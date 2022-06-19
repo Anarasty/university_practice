@@ -25,13 +25,13 @@ export const Navbar = () => {
                     <Link to="/rated_movies">MY RATINGS</Link>
                     {/* <span className="line-below"></span> */}
                 </li>
-                <li>
+                {/* <li>
                     {websiteTheme === "dark" ? 
                     <HiOutlineSun style={{color:"black"}} onClick={()=>setWebsiteTheme("light")} />
                     :
                     <HiOutlineMoon onClick={()=>setWebsiteTheme("dark")} />
                     }
-                </li>
+                </li> */}
             </ul>
         </nav>
     );
